@@ -1,7 +1,29 @@
 aid: ninjacart
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ninjacart.png
 name: Ninjacart
-description: 'Ninjacart is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: b2b. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Ninjacart is India''s largest agritech B2B fresh-produce supply-chain
+  company, founded in 2015 and headquartered in Bengaluru. It connects farmers and
+  producers directly with retailers, kirana stores, and businesses, removing layers
+  of middlemen from the fruit-and-vegetable supply chain. Its product portfolio spans
+  Ninja Mandi (wholesale produce marketplace), Ninja Kisan (farmer sourcing), Ninja
+  Kirana (retailer supply), and Ninja Global, alongside a technology-licensing model,
+  Ninja Tech Ventures, and a Startup Program that gives FoodTech/AgTech startups access
+  to its supply-chain tooling (demand forecasting, pricing intelligence, procurement,
+  inventory, logistics, and catalog management). Ninjacart is backed by investors
+  including Accel, Tiger Global, and Walmart/Flipkart. As of this profile it exposes
+  no public self-serve developer API or documentation; technology access is handled
+  through partnerships (partnerships@ninjacart.com).'
 url: https://raw.githubusercontent.com/api-evangelist/ninjacart/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - B2B
+- Agritech
+- Supply Chain
+- Fresh Produce
+- Agriculture
+- India
+- Marketplace
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +50,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ninjacart-domain-security.yml
+- type: WellKnown
+  url: well-known/ninjacart-well-known.yml
 - type: Website
   url: https://ninjacart.com/
+- type: Blog
+  url: https://ninjacart.com/blog/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
